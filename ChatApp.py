@@ -1,7 +1,8 @@
 from cgitb import text
 import tkinter as tk
 from tkinter import CENTER, END, font
-import time
+
+import ArtieTraining as AT
 
 background = '#121212'
 foreground = '#FFFFFF'
@@ -74,7 +75,7 @@ class Application:
 
     def Artie(self):
         self.TextInput.delete(0, END)
-        message = f"Artie: Artie\n"
+        message = f"Artie: {AT.XTrain}\n"
         self.DisplayText.configure(state=tk.NORMAL)
         self.DisplayText.insert(END, message)
         self.DisplayText.configure(state=tk.DISABLED)
