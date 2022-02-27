@@ -2,7 +2,7 @@ from cgitb import text
 import tkinter as tk
 from tkinter import CENTER, END, font
 
-import ArtieTraining as AT
+from chat import bot_name
 
 background = '#121212'
 foreground = '#FFFFFF'
@@ -75,7 +75,7 @@ class Application:
 
     def Artie(self):
         self.TextInput.delete(0, END)
-        message = f"Artie: {AT.XTrain}\n"
+        message = f"{bot_name}: {bot_response}\n"
         self.DisplayText.configure(state=tk.NORMAL)
         self.DisplayText.insert(END, message)
         self.DisplayText.configure(state=tk.DISABLED)
