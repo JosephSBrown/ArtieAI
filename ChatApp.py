@@ -2,7 +2,7 @@ from cgitb import text
 import tkinter as tk
 from tkinter import CENTER, END, font
 
-from chat import bot_name
+from chat import bot_name, bot_response
 
 background = '#121212'
 foreground = '#FFFFFF'

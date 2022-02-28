@@ -1,5 +1,4 @@
 import json
-from pickletools import optimize
 import numpy as np
 
 import torch
@@ -69,7 +68,7 @@ TrainLoader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, n
 
 
 device = torch.device('cpu')
-model = NeuralNetwork(input_size, hidden_size, output_size)
+model = NeuralNetwork(input_size, hidden_size, output_size).to(device)
 
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
