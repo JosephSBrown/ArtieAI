@@ -26,7 +26,6 @@ model.eval()
 
 bot_name = "Artie"
 
-
 def get_response():
     print('Let\'s Chat! Type \'Quit\' To Exit')
     while True:
